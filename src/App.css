@@ -83,3 +83,76 @@ body {
   background-color: rgb(233 233 233) !important;
 }
 
+
+
+
+.card-container {
+	background-color: white;
+width: 100%;
+	height: auto;
+	border-radius: 14px;
+	box-shadow: 0px 10px 30px hsl(0deg 0% 83%);
+}
+
+.card-container header {
+	background-image: url("https://react-profile-card.netlify.app/static/media/bg-pattern-card.b61daebd.svg");
+	background-position: 0px 0px;
+	background-repeat: no-repeat;
+	background-size: contain;
+	text-align: center;
+	border-top-left-radius: 14px;
+	border-top-right-radius: 14px;
+}
+
+.card-container img {
+  width: 100px;
+  border: solid #e8e9e9 4px;
+  border-radius: 50%;
+  margin-top: 110px !important;
+  margin: 75px auto auto;
+}
+
+.card-container .bold-text {
+	font-weight: bold;
+	font-size: 1.1rem;
+	text-align: center;
+	padding: 10px 20px 0px 20px;
+}
+
+.card-container .normal-text {
+	font-weight: normal;
+	font-size: 0.95rem;
+	color: hsl(0, 0%, 50%);
+	text-align: center;
+	padding-bottom: 10px;
+}
+
+/* SOCIAL STATS */
+.card-container .smaller-text {
+	font-weight: normal;
+	font-size: 0.7rem;
+	color: hsl(0, 0%, 50%);
+	text-align: center;
+	letter-spacing: 1px;
+	padding-bottom: 20px;
+	line-height: 5px;
+}
+
+.card-container .social-container {
+	
+	border-top: solid rgb(206, 206, 206) 1px;
+	text-align: center;
+  padding: 10px;
+}
+
+.card-container .followers {
+	flex: 1;
+}
+
+.card-container .likes {
+	flex: 1;
+}
+
+.card-container .photos {
+	flex: 1;
+}

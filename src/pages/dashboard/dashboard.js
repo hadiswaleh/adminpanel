@@ -29,6 +29,12 @@ import ShareIcon from '@mui/icons-material/Share';
 import Home from './home';
 import Settings from './settings';
 import Notfound from '../notfound';
+import Comments from './comments';
+import Photo from './photo';
+import Users from './users';
+import Todo from './todo';
+import Album from './album';
+import Post from './post';
 
 
 
@@ -68,6 +74,26 @@ function Dashboard(props) {
   },{
     name : 'Settings',
     url : '/dashboard/settings',
+  },{
+    name : 'Comments',
+    url : '/dashboard/comments',
+  }
+  ,{
+    name : 'Photo',
+    url : '/dashboard/photo',
+  }
+  ,{
+    name : 'Users',
+    url : '/dashboard/users',
+  } ,{
+    name : 'Todo',
+    url : '/dashboard/todo',
+  },{
+    name : 'Album',
+    url : '/dashboard/album',
+  },{
+    name : 'Post',
+    url : '/dashboard/post',
   }]
 
   const drawer = (
@@ -163,7 +189,13 @@ function Dashboard(props) {
             <Route path="/home" element={<Home  data={location.state} />} />
             <Route path="/analytics" element={<Analytics  />} />
             <Route path="/query" element={< Query  />} />
-            <Route path="/settings" element={< Settings  />} />
+            <Route path="/comments" element={< Comments  />} />
+            <Route path="/photo" element={< Photo  />} />
+            <Route path="/users" element={< Users  />} />
+            <Route path="/todo" element={< Todo  />} />
+            <Route path="/album" element={< Album  />} />
+            <Route path="/post" element={< Post  />} />
+            <Route path="/settings" element={< Settings  />} />            
             <Route path="*" element={<Notfound />} />    
         </Routes>
 

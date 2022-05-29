@@ -1,6 +1,5 @@
 import {Typography} from "@mui/material";
-import {Link} from "react-router-dom";
-import Comment from "../../component/comment";
+import Barchart from "../../component/barchart";
 
 function Query(){
 return <>
@@ -10,32 +9,11 @@ return <>
        Query Support
       </Typography></div>
         <div className="col-lg-3 col-12 mb-4">       
-         <Comment />
-        </div> 
-        <div className="col-lg-3 col-12 mb-4">  
-        <Comment />
-        </div> 
-        <div className="col-lg-3 col-12 mb-4">  
-        <Comment />
-        </div> 
-        <div className="col-lg-3 col-12 mb-4">  
-        <Comment />
-        </div> 
-        <div className="col-lg-3 col-12 mb-4">  
-        <Comment />
-        </div> 
-        <div className="col-lg-3 col-12 mb-4">  
-        <Comment />
-        </div> 
-          
+         <Barchart />
+        </div>         
     </div>
-   
-   
 </div>
- 
-
-
-</>
+ </>
 }
 
 export default Query;
