@@ -13,23 +13,35 @@ function CommentProfile(props) {
 			<header>
             <img src={Avatar} alt={props.name} />
 			</header>
-			<h1 className="bold-text">
-				
-				{commentdata.name}
-				
+			{commentdata.name &&
+			<h1 className="bold-text">				
+				{commentdata.name}	 			
 			</h1>
+             }
+
+           {commentdata.id &&
 			<h1 className="bold-text">
 				{commentdata.id}
 			</h1>
+            } 
+
+           {commentdata.title &&
 			<h1 className="bold-text">
 				{commentdata.title}
 			</h1>
+            } 
+
+            {commentdata.email &&
 			<h2 className="normal-text">{commentdata.email}</h2>
+             }
+
+           {commentdata.body &&
 			<div className="social-container">
             <Typography variant="body2" color="text.secondary">
           {commentdata.body}
           </Typography>
 			</div>
+           }
 		</div>
         </div>
          ))}
@@ -38,3 +50,7 @@ function CommentProfile(props) {
 }
 
 export default CommentProfile;
+
+
+
+		
